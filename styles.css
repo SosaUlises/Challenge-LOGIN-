@@ -1,23 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap");
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #390099;
     color: white;
-    font-family:'Poppins', sans-serif
+    font-family: 'Poppins', sans-serif
 }
-.container{
+
+.container {
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.login{
+
+.login {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -25,65 +28,88 @@ body{
     align-items: center;
     /* background-color: red; */
 }
-form{
+
+form {
+    justify-content: center;
     display: flex;
     flex-direction: column;
     max-width: 400px;
     width: 75%;
     gap: 8px;
 }
-form input{
-    height: 30px;
+
+form input {
+    height: 40px;
     border-radius: 20px;
     border: none;
     padding-left: 16px;
 }
+
 input:focus {
     outline: none;
 }
-button{
+
+button {
     margin-top: 5px;
     margin-bottom: 15px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 20px;
     border: none;
     width: 170px;
-    height: 25px;
+    height: 45px;
     align-self: center;
     background-color: #24255f;
     color: white;
 }
-button:hover{
+
+button:hover {
     background-color: #101134;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
-a:hover{
-    color: darkviolet;
+
+a:hover {
+    color: #101134;
 }
-.imgPC{
+
+.imgPC {
     display: none;
 }
-@media screen and (min-width: 1000px)  {
 
-    .login{
+@media screen and (min-width: 1000px) {
+
+    .login {
         background-color: #ff0054;
-        max-width: 700px;
+        max-width: 670px;
         width: 100%;
         border-radius: 20px;
-        min-height: 200px ;
-        max-height: 300px;
+        min-height: 200px;
+        max-height: 350px;
         height: 70%;
-        
+        flex-direction: row;
     }
-    .imgPC{
+
+    .imgPC {
         background-image: url(/img/image\ 3.png);
         display: block;
         width: 100%;
         height: 100%;
-        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
     }
-    
+
+    form {
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
 }
